@@ -11,6 +11,7 @@ namespace Game
     {
         IPlayerRepository playerRepository = new PlayerRepository();
         IScoreRepository scoreRepository = new ScoreRepository();
+        Parser parser = new Parser();
         IScores scoreBL = new Scores();
         int noOfPlayers, targetValue, totalWinners = 0;
         Dictionary<int, int> scoreMap, turnSkip, prevValues;
@@ -34,11 +35,11 @@ namespace Game
         }
         private void GetNoOfPlayersAndTargetScore()
         {
-            Console.WriteLine("Enter the no. of Players: ");
-            Int32.TryParse(Console.ReadLine(), out noOfPlayers);
+            Console.WriteLine("Enter the no of players: ");
+            noOfPlayers = parser.ParseIntFromConsole();
 
             Console.WriteLine("Enter the Target Value: ");
-            Int32.TryParse(Console.ReadLine(), out targetValue);
+            targetValue = parser.ParseIntFromConsole();
 
             Console.WriteLine("Press any key to start.");
             string input = Console.ReadLine().ToLower();

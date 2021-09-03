@@ -1,0 +1,14 @@
+//All scenarios
+
+Base Cases: 
+1)Validating consecutive 6's rule.if second turn is offered or not.
+2)Validating consecutive 1's rule as upcoming turn is skipped or not. also resumed from subsequent coming turns.
+3)Validating ranking of players after turn.
+4)Validating score update.
+5)Validating final rankings.
+6)Asserting console inputs.
+
+Edge Cases
+7)Checking if player is not changed if someone scores more than player aftering completion.
+8)Checking turn skip goes away after 1 round.
+9)If a player got 6, and he completed the game. then next turn should not happen.

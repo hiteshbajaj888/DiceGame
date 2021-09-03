@@ -41,7 +41,7 @@ namespace Game
             Console.WriteLine("Enter the Target Value: ");
             targetValue = parser.ParseIntFromConsole();
 
-            Console.WriteLine("Press any key to start.");
+            Console.WriteLine("Press Enter to start.");
             string input = Console.ReadLine().ToLower();
         }
         public void Play()
